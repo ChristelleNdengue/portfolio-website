@@ -63,7 +63,7 @@
          <div>
           <picture>
            <source srcset="img/work/my tattoo world/mtw_3_market analysis_small.jpg" media="(max-width:600px)">
-           <img src="img/work/mytattooworld/mtw_3_market analysis_big.jpg" alt="Market Analysis Project My Tattoo World">
+           <img src="img/work/my tattoo world/mtw_3_market analysis_big.jpg" alt="Market Analysis Project My Tattoo World">
          </picture>
          <h3>Strategic Goals</h3>
           <p>After having identified the digital solutions tattoo enthusiasts currently have, I wondered why not creating an allrounder app which combines all these features: search for tattoo designers and booking option, search for inspirations (henna and inked tattoos) and virtual tattoo test.</p>
@@ -79,7 +79,7 @@
          <div>
           <picture>
             <source srcset="img/work/my tattoo world/mtw_4_business goals mockup_small.jpg" media="(max-width:600px)">
-            <img src="img/work/mytattooworld/mtw_4_business goals mockup_big.jpg" alt="Mockup Onboarding screens My Tattoo World app">
+            <img src="img/work/my tattoo world/mtw_4_business goals mockup_big.jpg" alt="Mockup Onboarding screens My Tattoo World app">
           </picture>
          </div>
          <!-- Column 4 -->
@@ -97,7 +97,7 @@
          <div>
           <picture>
            <source srcset="img/work/my tattoo world/mtw_5.1_details user research_small.jpg" media="(max-width:600px)">
-           <img src="img/work/mytattooworld/mtw_5.1_details user research_big.jpg" alt="Results User Interviews">
+           <img src="img/work/my tattoo world/mtw_5.1_details user research_big.jpg" alt="Results User Interviews">
           </picture>
          </div>
          <!-- Column 6 -->
@@ -123,7 +123,7 @@
          <div>
            <picture>
             <source srcset="img/work/my tattoo world/mtw_7_low-fidelity wireframes_small.jpg" media="(max-width:600px)">
-            <img src="img/work/mytattooworld/mtw_7_low-fidelity wireframes.jpg" alt="Low-fidelity wireframes">
+            <img src="img/work/my tattoo world/mtw_7_low-fidelity wireframes.jpg" alt="Low-fidelity wireframes">
            </picture>
          </div>
          <!-- Column 9 -->
@@ -147,8 +147,8 @@
          <!-- Column 11 -->
          <div>
           <picture>
-           <source srcset="img/work/my tattoo world/mtw_8.1_changes home after usability test results_small.jpg" media="(max-width:600px)">
-           <img src="img/work/my tattoo world/mtw_8.1_changes home after usability test results_big.jpg" alt="Usability test results: changes on Home screen">
+           <source srcset="img/work/my tattoo world/mtw_8.1_changes home after usability test_small.jpg" media="(max-width:600px)">
+           <img src="img/work/my tattoo world/mtw_8.1_changes home after usability test_big.jpg" alt="Usability test results: changes on Home screen">
           </picture>
           <h3>Usability Test<span>- Home screen</span></h3>
            <p>Maybe you've asked yourself while looking at the low-fidelity wireframes above what is the meaning of the light bulb in the navigation bottom bar? An idea?</p>​​
@@ -164,8 +164,8 @@
           <!-- Subcolumn 12.1 -->
           <div>
            <picture>
-            <source srcset="img/work/my tattoo world/mtw_8.2_changes search after usability test results_small.jpg" media="(max-width:600px)">
-            <img src="img/work/my tattoo world/mtw_8.2_changes search after usability test results_big.jpg" alt="Usability test results: changes of Search feature">
+            <source srcset="img/work/my tattoo world/mtw_8.2_changes search after usability test_small.jpg" media="(max-width:600px)">
+            <img src="img/work/my tattoo world/mtw_8.2_changes search after usability test_big.jpg" alt="Usability test results: changes of Search feature">
            </picture>
            <h4>Search feature</h4>
             <p>The idea to have a direct access to the Photo Gallery when entering the app, so that Jacinthe can start right away with her search, is still there.</p>​​
@@ -174,8 +174,8 @@
           <!-- Subcolumn 12.2 -->
           <div>
            <picture>
-            <source srcset="img/work/my tattoo world/mtw_8.3_changes virtual test after usability test results_small.jpg" media="(max-width:600px)">
-            <img src="img/work/my tattoo world/mtw_8.3_changes virtual test after usability test results_big.jpg" alt="Usability test results: changes of Virtual test feature">
+            <source srcset="img/work/my tattoo world/mtw_8.3_changes virtual test after usability test_small.jpg" media="(max-width:600px)">
+            <img src="img/work/my tattoo world/mtw_8.3_changes virtual test after usability test_big.jpg" alt="Usability test results: changes of Virtual test feature">
            </picture>
            <h4>Virtual tattoo test feature</h4>
             <p>A great feature for the user who wants to be sure to have the right tattoo design, although this option is not well known. Due to that the users asked during the usability test couldn't find easily how to access to the feature. And there the upload option was surprising, as users would expect to be able to use pictures from the app.</p>​​
@@ -184,8 +184,8 @@
           <!-- Subcolumn 12.3 -->
           <div>
            <picture>
-            <source srcset="img/work/my tattoo world/mtw_8.4_changes booking after usability test results_small.jpg" media="(max-width:600px)">
-            <img src="img/work/my tattoo world/mtw_8.4_changes booking after usability test results_big.jpg" alt="Usability test results: changes of Virtual test feature">
+            <source srcset="img/work/my tattoo world/mtw_8.4_changes booking after usability test_small.jpg" media="(max-width:600px)">
+            <img src="img/work/my tattoo world/mtw_8.4_changes booking after usability test_big.jpg" alt="Usability test results: changes of Virtual test feature">
            </picture>
            <h4>Booking feature</h4>
             <p>For pragmatic people who expect to have an app for everything, this feature is a must. But speaking about tattoo a lot of information are needed, so that the designer can evaluate how much time he/she will need and how much time the tattoo session will last. That was the challenge here not to overwhelm the user. That is why the process has been reviewed and splitted in 4 steps clearly indicated by the step indicator.</p>​​
