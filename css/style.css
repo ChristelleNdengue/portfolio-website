@@ -1,0 +1,111 @@
+/*
+Colors used:
+Primary color (Fire Brick): #a42922
+Secondary color (Splash): #f2d39c
+Tertiary color (Waikawa Grey): #647891
+*/
+
+body {
+ background-color: #ffffff;
+ font-family: 'Nunito', sans-serif;
+ font-size:: 16px; /* Sets the font size to 16 px */
+ font-weight: 400; /* Sets the font weight to 400 */
+ line-height: 1.6; /* Sets the line-height to 1.6 * the font size */
+ color: #54524F; /* Sets the font color to Dune color */
+}
+
+header {
+  background-color: #a42922;
+}
+
+/* Headlines */
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 900;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+/* Hyperlinks */
+a {
+  color: #a42922;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #a42922;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:visited {
+  color: #647891; /* Visited link */
+}
+a:active {
+  color: #647891;
+  text-decoration: underline; /* Selected link */
+}
+
+/* Very specific rules must to go close to the bottom, in order to avoid overwriting */
+/* Hyperlinks */
+.menu {
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+.menu:hover {
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+.menu:active {
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+/* Primary button */
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
+  background-color: #a42922;
+  color: #ffffff !important; /* needed to override the default link color */
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px; /* for rounded corners */
+  border-bottom: 2px solid #a42922; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover,
+.button:focus {
+  opacity: 0.8; /* reduces the opacity of the button to 80% */
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:active {
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* Secondary button */
+.button.contact {
+  background-color: transparent;
+  color: #a42922 !important; /* needed to override the default link color */
+  text-transform: uppercase;
+  border: 2px solid #a42922;
+}
+.button.contact:hover,
+.button:focus {
+  background-color: #a42922;
+  color: #ffffff !important; /* needed to override the default link color */
+}
+.button.contact:active {
+  background-color: #a42922;
+  color: #ffffff !important; /* needed to override the default link color */
+  border: 5px solid #a42922;
+}
