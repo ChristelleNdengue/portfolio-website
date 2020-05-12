@@ -8,7 +8,7 @@ Tertiary color (Waikawa Grey): #647891
 body {
  background-color: #ffffff;
  font-family: 'Nunito', sans-serif;
- font-size:: 16px; /* Sets the font size to 16 px */
+ font-size: 16px; /* Sets the font size to 16 px */
  font-weight: 400; /* Sets the font weight to 400 */
  line-height: 1.6; /* Sets the line-height to 1.6 * the font size */
  color: #54524F; /* Sets the font color to Dune color */
@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 900;
+  text-align: center;
 }
 h2 {
   font-size: 2.25em;
@@ -41,34 +42,52 @@ h3 {
 /* Hyperlinks */
 a {
   color: #a42922;
-  text-decoration: none; /* No underlining */
+  text-decoration: underline;
+}
+a:visited {
+  color: #a42922; /* Visited link best before hover state. Same color as parent. */
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
-  color: #a42922;
+  color: #647891;
   text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:visited {
-  color: #647891; /* Visited link */
 }
 a:active {
   color: #647891;
   text-decoration: underline; /* Selected link */
 }
+/* Lists */
+nav ul,
+footer ul {
+  list-style: none;
+}
 
 /* Very specific rules must to go close to the bottom, in order to avoid overwriting */
 /* Hyperlinks */
-.menu {
+nav li a {
+  color: #ffffff;
   text-transform: uppercase;
-  color: #ffffff !important;
+  text-decoration: none;
+  list-style-type: none;
 }
-.menu:hover {
+nav li a:visited {
+  color: #ffffff;
   text-transform: uppercase;
-  color: #ffffff !important;
+  text-decoration: none;
+  list-style-type: none;
 }
-.menu:active {
+nav li a:hover,
+nav li a:focus {
+  color: #ffffff;
   text-transform: uppercase;
-  color: #ffffff !important;
+  list-style-type: none;
+
+}
+nav li a:active {
+  color: #ffffff;
+  text-transform: uppercase;
+  list-style-type: none;
 }
 /* Primary button */
 .button {
@@ -76,6 +95,7 @@ a:active {
   background-color: #a42922;
   color: #ffffff !important; /* needed to override the default link color */
   text-transform: uppercase;
+  text-decoration: none;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px; /* for rounded corners */
@@ -102,10 +122,10 @@ a:active {
 .button.contact:hover,
 .button:focus {
   background-color: #a42922;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #ffffff;
 }
 .button.contact:active {
   background-color: #a42922;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #ffffff;
   border: 5px solid #a42922;
 }
