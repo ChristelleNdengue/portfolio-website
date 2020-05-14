@@ -1,5 +1,9 @@
-/*
-Colors used:
+/* The asterics stands for all HTML elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Colors used:
 Primary color (Fire Brick): #a42922
 Secondary color (Splash): #f2d39c
 Tertiary color (Waikawa Grey): #647891
@@ -14,9 +18,21 @@ body {
  color: #54524F; /* Sets the font color to Dune color */
 }
 
+/* To make sure images scale correctly */
+img {
+  width: 100%;
+}
+
 header {
   background-color: #a42922;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 4px 4px 5px 0px rgba(52, 49, 50, 0.49);
+  position: fixed;
+  display: inline-block;
+  width: 100%;
 }
+
 
 /* Headlines */
 h1, h2, h3, h4 {
@@ -58,9 +74,14 @@ a:active {
   text-decoration: underline; /* Selected link */
 }
 /* Lists */
+ul {
+  padding-left: 0;
+}
+
 nav ul,
 footer ul {
-  list-style: none;
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Very specific rules must to go close to the bottom, in order to avoid overwriting */
@@ -69,25 +90,21 @@ nav li a {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  list-style-type: none;
+  padding: 0 15px;
 }
 nav li a:visited {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  list-style-type: none;
 }
 nav li a:hover,
 nav li a:focus {
   color: #ffffff;
   text-transform: uppercase;
-  list-style-type: none;
-
 }
 nav li a:active {
   color: #ffffff;
   text-transform: uppercase;
-  list-style-type: none;
 }
 /* Primary button */
 .button {
@@ -128,4 +145,35 @@ nav li a:active {
   background-color: #a42922;
   color: #ffffff;
   border: 5px solid #a42922;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0;
+}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #54524F;
+}
+.logo {
+  max-width: 250px;
+}
+nav ul li,
+footer ul li {
+  display: inline-block;
+}
+#hero {
+  background-color: #a42922;
+  color: #ffffff;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 335px;
+  display: inline-block;
+  width: 100%;
 }
