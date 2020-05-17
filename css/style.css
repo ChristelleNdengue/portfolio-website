@@ -111,7 +111,7 @@ nav li a:active {
   margin: 25px;
   border-radius: 3px; /* for rounded corners */
   border-bottom: 2px solid #a42922; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.2s opacity; /* Summarize all transition properties in one line to keep it short */
 }
 .button:hover,
 .button:focus {
@@ -147,9 +147,17 @@ nav li a:active {
 .row {
   margin: 25px 0;
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #54524F;
+}
+#work .row:last-child {
+  border-bottom: none;
 }
 .logo {
   max-width: 80px;
@@ -174,5 +182,81 @@ h1:first-line {
 }
 footer {
   padding-bottom: 25px;
-  border-top: 1px solid #54524F;
+  border-top: 3px solid #54524F;
+}
+
+/* Media queries */
+/* To scale the columns according to the different screens sizes */
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+/* For switch from small screens up to 640px (our original layout as mobile-first approach!) to medium screens up to 1024px */
+@media only screen and (min-width: 640px) {
+header {
+  text-align: unset;
+  padding: 20px 0 13 px;
+ }
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+ }
+ main {
+   padding-top: 99px;
+ }
+ body {
+   font-size: 18px;
+ }
+ /* Set up columns according to web grid */
+ .col-md-6 {
+   width: 50%;
+ }
+ #about-page h3 {
+   margin-top: 0;
+ }
+}
+/* For switch from medium screens up to 1024 px to large screens up to 1440px */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* For switch from large screens up to 1440 px to extra large screens of 1441px and up */
+@media only screen and (min-width: 1440px) {
+
+}
+/* Rare for targeting people viewing on extra large screens (1920px or larger) */
+@media only screen and (min-width: 1920px) {
+
+}
+/* Animated keyframes */
+@keyframes color-change {
+  0% {fill: #EDC655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);} /* Order of the values: first right-left; second top-down */
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446,48px);} /* Order of the values: first right-left; second top-down */
+  to {transform: translate(100px,48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
