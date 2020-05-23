@@ -25,8 +25,7 @@ img {
 
 header {
   background-color: #a42922;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 4px 4px 5px 0px rgba(52, 49, 50, 0.49);
   position: fixed;
   width: 100%;
@@ -79,6 +78,7 @@ nav ul,
 footer ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 /* Very specific rules must to go close to the bottom, in order to avoid overwriting */
@@ -165,7 +165,31 @@ nav li a:active {
 .logo {
   max-width: 80px;
 }
-nav ul li,
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid;
+}
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
 footer ul li {
   display: inline-block;
 }
@@ -175,7 +199,7 @@ footer ul li {
   padding: 20px 0;
 }
 main {
-  padding-top: 150px;
+  padding-top: 100px;
 }
 #hero span {
   display: block;
@@ -228,6 +252,18 @@ nav {
   float: right;
   margin-top: 4px;
  }
+ nav ul {
+   margin: 1em 0;
+ }
+ nav ul li {
+   display: inline-block;
+ }
+ .navtoggle li:not(:last-child) {
+   display: inline-block;
+ }
+ .navtoggle li:last-child {
+   display: none;
+ }
  main {
    padding-top: 99px;
  }
@@ -249,7 +285,7 @@ nav {
  }
  .paragraph {
    max-width: 900px;
-   margin-left: 0 auto;
+   margin: 10px auto;
  }
  /* To scale the columns according to the different screens sizes */
  [class*="col-"] {
