@@ -201,7 +201,7 @@ nav li a:active {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 24px;
   font-size: 20px;
   padding-right: 0;
 }
