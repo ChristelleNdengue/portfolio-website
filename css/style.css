@@ -310,6 +310,40 @@ footer .fab {
     display: inline-block;
   }
 
+  .top-bottom-borders-out a::before,
+  .top-bottom-borders-out a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .top-bottom-borders-out a::before {
+    top: 0;
+    transform: translateY(10px);
+  }
+
+  .top-bottom-borders-out a::after {
+    bottom: 0;
+    transform: translateY(-10px);
+  }
+
+  .top-bottom-borders-out a:hover::before,
+  .top-bottom-borders-out a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .top-bottom-borders-out a:active::before,
+  .top-bottom-borders-out a:active::after {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
