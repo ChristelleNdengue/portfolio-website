@@ -218,7 +218,7 @@ nav li a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid;
+  border-top: 1px solid #fff;
 }
 
 .navtoggle.responsive li:last-child {
