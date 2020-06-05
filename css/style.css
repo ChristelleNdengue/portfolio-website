@@ -10,7 +10,7 @@ Tertiary color (Waikawa Grey): #647891
 */
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   font-family: 'Nunito', sans-serif;
   font-size: 16px; /* Sets the font size to 16 px */
   font-weight: 400; /* Sets the font weight to 400 */
@@ -98,30 +98,30 @@ footer ul {
 
 /* Hyperlinks */
 nav li a {
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 15px;
 }
 
 nav li a:visited {
-  color: #fff;
+  color: #ffffff;
 }
 
 nav li a:hover,
 nav li a:focus {
-  color: #fff;
+  color: #ffffff;
 }
 
 nav li a:active {
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Primary button */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #a42922;
-  color: #fff !important; /* needed to override the default link color */
+  color: #ffffff !important; /* needed to override the default link color */
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -137,7 +137,7 @@ nav li a:active {
 .button:hover,
 .button:focus {
   opacity: 0.8; /* reduces the opacity of the button to 80% */
-  color: #fff;
+  color: #ffffff;
 }
 
 .button:active {
@@ -157,12 +157,12 @@ nav li a:active {
 .button.contact:hover,
 .button:focus {
   background-color: #a42922;
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 .button.contact:active {
   background-color: #a42922;
-  color: #fff;
+  color: #ffffff;
   border: 5px solid #a42922;
 }
 
@@ -230,7 +230,7 @@ footer ul li {
 }
 
 #hero {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #a42922;
   padding: 20px 0;
 }
