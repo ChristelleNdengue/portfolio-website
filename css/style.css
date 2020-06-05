@@ -310,33 +310,36 @@ footer .fab {
     display: inline-block;
   }
 
-  .topbottombordersout::before,
-  .topbottombordersout::after {
+  .top-bottom-borders-out li a::before,
+  .top-bottom-borders-out li a::after {
+    position: absolute;
+    left: 0;
     width: 100%;
+    height: 2px;
     background: #fff;
     content: "";
     opacity: 0;
     transition: all 0.3s;
   }
 
-  .topbottombordersout::before {
+  .top-bottom-borders-out li a::before {
     top: 0;
     transform: translateY(10px);
   }
 
-  .topbottombordersout::after {
+  .top-bottom-borders-out li a::after {
     bottom: 0;
     transform: translateY(-10px);
   }
 
-  .topbottombordersout:hover::before,
-  .topbottombordersout:hover::after {
+  .top-bottom-borders-out li a:hover::before,
+  .top-bottom-borders-out li a:hover::after {
     opacity: 1;
     transform: translateY(0);
   }
 
-  .topbottombordersout:active::before,
-  .topbottombordersout:active::after {
+  .top-bottom-borders-out li a:active::before,
+  .top-bottom-borders-out li a:active::after {
     opacity: 1;
     transform: translateY(10px);
   }
