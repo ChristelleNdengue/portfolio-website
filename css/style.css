@@ -310,8 +310,8 @@ footer .fab {
     display: inline-block;
   }
 
-  .top-bottom-borders-out a::before,
-  .top-bottom-borders-out a::after {
+  .top-bottom-borders-out li a::before,
+  .top-bottom-borders-out li a::after {
     position: absolute;
     left: 0;
     width: 100%;
@@ -322,24 +322,24 @@ footer .fab {
     transition: all 0.3s;
   }
 
-  .top-bottom-borders-out a::before {
+  .top-bottom-borders-out li a::before {
     top: 0;
     transform: translateY(10px);
   }
 
-  .top-bottom-borders-out a::after {
+  .top-bottom-borders-out li a::after {
     bottom: 0;
     transform: translateY(-10px);
   }
 
-  .top-bottom-borders-out a:hover::before,
-  .top-bottom-borders-out a:hover::after {
+  .top-bottom-borders-out li a:hover::before,
+  .top-bottom-borders-out li a:hover::after {
     opacity: 1;
     transform: translateY(0);
   }
 
-  .top-bottom-borders-out a:active::before,
-  .top-bottom-borders-out a:active::after {
+  .top-bottom-borders-out li a:active::before,
+  .top-bottom-borders-out li a:active::after {
     opacity: 1;
     transform: translateY(10px);
   }
