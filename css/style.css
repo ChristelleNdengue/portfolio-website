@@ -391,6 +391,10 @@ footer .fab {
   .col-md-6 {
     width: 50%;
   }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
 }
 
 /* For switch from medium screens up to 1024 px to large screens up to 1440px */
