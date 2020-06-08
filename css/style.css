@@ -44,6 +44,10 @@ h1 {
   font-weight: 900;
   text-align: center;
   line-height: 1.7em !important;
+  text-transform: uppercase;
+}
+h1 span {
+  text-transform: none;
 }
 
 h2 {
@@ -241,10 +245,6 @@ main {
 
 #hero span {
   display: block;
-}
-
-h1::first-line {
-  text-transform: uppercase;
 }
 
 footer {
