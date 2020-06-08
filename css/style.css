@@ -10,7 +10,7 @@ Tertiary color (Waikawa Grey): #647891
 */
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Nunito', sans-serif;
   font-size: 16px; /* Sets the font size to 16 px */
   font-weight: 400; /* Sets the font weight to 400 */
@@ -44,6 +44,11 @@ h1 {
   font-weight: 900;
   text-align: center;
   line-height: 1.7em !important;
+  text-transform: uppercase;
+}
+
+h1 span {
+  text-transform: none;
 }
 
 h2 {
@@ -98,30 +103,30 @@ footer ul {
 
 /* Hyperlinks */
 nav li a {
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 15px;
 }
 
 nav li a:visited {
-  color: #ffffff;
+  color: #fff;
 }
 
 nav li a:hover,
 nav li a:focus {
-  color: #ffffff;
+  color: #fff;
 }
 
 nav li a:active {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Primary button */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #a42922;
-  color: #ffffff !important; /* needed to override the default link color */
+  color: #fff !important; /* needed to override the default link color */
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -137,7 +142,7 @@ nav li a:active {
 .button:hover,
 .button:focus {
   opacity: 0.8; /* reduces the opacity of the button to 80% */
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:active {
@@ -157,12 +162,12 @@ nav li a:active {
 .button.contact:hover,
 .button:focus {
   background-color: #a42922;
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 .button.contact:active {
   background-color: #a42922;
-  color: #ffffff;
+  color: #fff;
   border: 5px solid #a42922;
 }
 
@@ -218,7 +223,7 @@ nav li a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid;
+  border-top: 1px solid #fff;
 }
 
 .navtoggle.responsive li:last-child {
@@ -230,7 +235,7 @@ footer ul li {
 }
 
 #hero {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #a42922;
   padding: 20px 0;
 }
@@ -241,10 +246,6 @@ main {
 
 #hero span {
   display: block;
-}
-
-h1::first-line {
-  text-transform: uppercase;
 }
 
 footer {
@@ -310,6 +311,58 @@ footer .fab {
     display: inline-block;
   }
 
+  nav ul li a {
+    position: relative;
+  }
+
+  .top-bottom-borders-out li a::before,
+  .top-bottom-borders-out li a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .top-bottom-borders-out li a::before {
+    top: -10px;
+    transform: translateY(10px);
+  }
+
+  .top-bottom-borders-out li a::after {
+    bottom: -10px;
+    transform: translateY(-10px);
+  }
+
+  .top-bottom-borders-out li a:hover::before,
+  .top-bottom-borders-out li a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .top-bottom-borders-out li a:active::before,
+  .top-bottom-borders-out li a:active::after {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 0;
+    border: 0;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -356,6 +409,10 @@ footer .fab {
   /* Set up columns according to web grid */
   .col-md-6 {
     width: 50%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
   }
 }
 
